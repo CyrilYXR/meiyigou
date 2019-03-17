@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-common/meiyigou-common.iml" filepath="$PROJECT_DIR$/meiyigou-common/meiyigou-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-dao/meiyigou-dao.iml" filepath="$PROJECT_DIR$/meiyigou-dao/meiyigou-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-parent.iml" filepath="$PROJECT_DIR$/meiyigou-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" filepath="$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" />
+    </modules>
+  </component>
+</project>
