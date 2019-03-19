@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="meiyigou-shop-web:war">
+    <output-path>$PROJECT_DIR$/meiyigou-shop-web/target</output-path>
+    <root id="archive" name="meiyigou-shop-web-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="meiyigou-shop-web:war exploded" />
+    </root>
+  </artifact>
+</component>

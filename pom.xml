@@ -11,6 +11,12 @@
         <module>meiyigou-common</module>
         <module>meiyigou-pojo</module>
         <module>meiyigou-dao</module>
+        <module>meiyigou-sellergoods-interface</module>
+        <module>meiyigou-sellergoods-service</module>
+        <module>meiyigou-shop-web</module>
+        <module>meiyigou-manager-web</module>
+        <module>meiyigou-content-interface</module>
+        <module>meiyigou-content-service</module>
     </modules>
     <packaging>pom</packaging>
 
