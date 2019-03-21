@@ -37,7 +37,7 @@
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.28" />
           <element id="library" level="project" name="Maven: javassist:javassist:3.11.0.GA" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
-          <element id="archive" name="meiyigou-comment-1.0.0-SNAPSHOT.jar">
+          <element id="archive" name="meiyigou-common-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="meiyigou-common" />
           </element>
           <element id="library" level="project" name="Maven: org.csource.fastdfs:fastdfs:1.2" />

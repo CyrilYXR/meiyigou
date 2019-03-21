@@ -83,7 +83,7 @@
 
         <dependency>
             <groupId>com.meiyigou</groupId>
-            <artifactId>meiyigou-comment</artifactId>
+            <artifactId>meiyigou-common</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>

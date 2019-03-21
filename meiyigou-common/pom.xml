@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>meiyigou-comment</artifactId>
+    <artifactId>meiyigou-common</artifactId>
 
     <dependencies>
         <dependency>

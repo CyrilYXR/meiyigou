@@ -17,6 +17,10 @@
         <module>meiyigou-manager-web</module>
         <module>meiyigou-content-interface</module>
         <module>meiyigou-content-service</module>
+        <module>meiyigou-portal-web</module>
+        <module>meiyigou-solr-util</module>
+        <module>meiyigou-search-interface</module>
+        <module>meiyigou-search-service</module>
     </modules>
     <packaging>pom</packaging>
 

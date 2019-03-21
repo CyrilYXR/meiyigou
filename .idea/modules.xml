@@ -9,9 +9,13 @@
       <module fileurl="file://$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" filepath="$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-parent.iml" filepath="$PROJECT_DIR$/meiyigou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" filepath="$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-portal-web/meiyigou-portal-web.iml" filepath="$PROJECT_DIR$/meiyigou-portal-web/meiyigou-portal-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-search-interface/meiyigou-search-interface.iml" filepath="$PROJECT_DIR$/meiyigou-search-interface/meiyigou-search-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-search-service/meiyigou-search-service.iml" filepath="$PROJECT_DIR$/meiyigou-search-service/meiyigou-search-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-sellergoods-interface/meiyigou-sellergoods-interface.iml" filepath="$PROJECT_DIR$/meiyigou-sellergoods-interface/meiyigou-sellergoods-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" filepath="$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-shop-web/meiyigou-shop-web.iml" filepath="$PROJECT_DIR$/meiyigou-shop-web/meiyigou-shop-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-solr-util/meiyigou-solr-util.iml" filepath="$PROJECT_DIR$/meiyigou-solr-util/meiyigou-solr-util.iml" />
     </modules>
   </component>
 </project>

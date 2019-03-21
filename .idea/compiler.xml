@@ -12,9 +12,13 @@
         <module name="meiyigou-dao" />
         <module name="meiyigou-manager-web" />
         <module name="meiyigou-pojo" />
+        <module name="meiyigou-portal-web" />
+        <module name="meiyigou-search-interface" />
+        <module name="meiyigou-search-service" />
         <module name="meiyigou-sellergoods-interface" />
         <module name="meiyigou-sellergoods-service" />
         <module name="meiyigou-shop-web" />
+        <module name="meiyigou-solr-util" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,9 +29,13 @@
       <module name="meiyigou-manager-web" target="1.7" />
       <module name="meiyigou-parent" target="1.7" />
       <module name="meiyigou-pojo" target="1.7" />
+      <module name="meiyigou-portal-web" target="1.7" />
+      <module name="meiyigou-search-interface" target="1.7" />
+      <module name="meiyigou-search-service" target="1.7" />
       <module name="meiyigou-sellergoods-interface" target="1.7" />
       <module name="meiyigou-sellergoods-service" target="1.7" />
       <module name="meiyigou-shop-web" target="1.7" />
+      <module name="meiyigou-solr-util" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

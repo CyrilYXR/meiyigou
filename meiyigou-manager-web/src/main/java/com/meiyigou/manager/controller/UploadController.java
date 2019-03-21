@@ -20,7 +20,7 @@ public class UploadController {
         String extName = originalFileName.substring(originalFileName.lastIndexOf(".")+1);
 
         try{
-            FastDFSClient client = new FastDFSClient("classpath:spring/fdfs_client.conf");
+            FastDFSClient client = new FastDFSClient("classpath:config/fdfs_client.conf");
             String fildId = client.uploadFile(file.getBytes(), extName);
             String url = file_service_url + fildId;
             return new Result(true, url);

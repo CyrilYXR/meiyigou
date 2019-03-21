@@ -3,6 +3,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/meiyigou-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/meiyigou-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/meiyigou-portal-web" />
+    <file type="web" url="file://$PROJECT_DIR$/meiyigou-search-service" />
     <file type="web" url="file://$PROJECT_DIR$/meiyigou-sellergoods-service" />
     <file type="web" url="file://$PROJECT_DIR$/meiyigou-shop-web" />
   </component>
