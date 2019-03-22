@@ -6,14 +6,12 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.meiyigou.mapper.TbSpecificationOptionMapper;
 import com.meiyigou.mapper.TbTypeTemplateMapper;
-import com.meiyigou.pojo.TbSpecificationOption;
-import com.meiyigou.pojo.TbSpecificationOptionExample;
-import com.meiyigou.pojo.TbTypeTemplate;
-import com.meiyigou.pojo.TbTypeTemplateExample;
+import com.meiyigou.pojo.*;
 import com.meiyigou.pojo.TbTypeTemplateExample.Criteria;
 import com.meiyigou.sellergoods.service.TypeTemplateService;
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.List;
 import java.util.Map;
@@ -88,7 +86,7 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 	}
 	
 	
-		@Override
+	@Override
 	public PageResult findPage(TbTypeTemplate typeTemplate, int pageNum, int pageSize) {
 		PageHelper.startPage(pageNum, pageSize);
 		
@@ -111,8 +109,33 @@ public class TypeTemplateServiceImpl implements TypeTemplateService {
 	
 		}
 		
-		Page<TbTypeTemplate> page= (Page<TbTypeTemplate>)typeTemplateMapper.selectByExample(example);		
+		Page<TbTypeTemplate> page= (Page<TbTypeTemplate>)typeTemplateMapper.selectByExample(example);
+
+		//缓存处理
+        saveToRedis();
+
 		return new PageResult(page.getTotal(), page.getResult());
+	}
+
+	@Autowired
+	private RedisTemplate redisTemplate;
+
+	/**
+	 * 将品牌列表和规格列表数据存放到缓存中
+	 */
+	private void saveToRedis(){
+		List<TbTypeTemplate> templates = findAll();
+		for(TbTypeTemplate template : templates){
+            //得到品牌列表
+		    List brandList = JSON.parseArray(template.getBrandIds(), Map.class);
+            redisTemplate.boundHashOps("brandList").put(template.getId(), brandList);
+
+            //得到规格列表
+            List specList = findSpecList(template.getId());
+            redisTemplate.boundHashOps("specList").put(template.getId(), specList);
+
+		}
+        System.out.println("缓存品牌和规格列表");
 	}
 
 	@Override

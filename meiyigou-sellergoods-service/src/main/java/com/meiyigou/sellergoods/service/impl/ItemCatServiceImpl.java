@@ -4,12 +4,14 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.meiyigou.mapper.TbItemCatMapper;
+import com.meiyigou.pojo.TbItem;
 import com.meiyigou.pojo.TbItemCat;
 import com.meiyigou.pojo.TbItemCatExample;
 import com.meiyigou.pojo.TbItemCatExample.Criteria;
 import com.meiyigou.sellergoods.service.ItemCatService;
 import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.List;
 
@@ -18,11 +20,14 @@ import java.util.List;
  * @author Administrator
  *
  */
-@Service
+@Service(timeout = 5000)
 public class ItemCatServiceImpl implements ItemCatService {
 
 	@Autowired
 	private TbItemCatMapper itemCatMapper;
+
+	@Autowired
+	private RedisTemplate redisTemplate;
 	
 	/**
 	 * 查询全部
@@ -103,6 +108,14 @@ public class ItemCatServiceImpl implements ItemCatService {
 		TbItemCatExample example = new TbItemCatExample();
 		Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(parentId);
+
+		//将模板id放入缓存（以商品分类名称为key）
+		List<TbItemCat> itemCats = findAll();
+		for(TbItemCat itemCat:itemCats){
+            redisTemplate.boundHashOps("itemCat").put(itemCat.getName(), itemCat.getTypeId());
+        }
+        System.out.println("将模板id放入缓存");
+
 		return itemCatMapper.selectByExample(example);
 	}
 
