@@ -1,6 +1,7 @@
 package com.meiyigou.sellergoods.service;
 
 import com.meiyigou.pojo.TbGoods;
+import com.meiyigou.pojo.TbItem;
 import com.meiyigou.pojogroup.Goods;
 import entity.PageResult;
 
@@ -67,5 +68,13 @@ public interface GoodsService {
 	 * @param status
 	 */
 	public void updateStatus(Long ids[], String status);
+
+	/**
+	 * 根据SPU的id集合查询SKU列表
+	 * @param goodsIds
+	 * @param status
+	 * @return
+	 */
+	public List<TbItem> findItemListByGoodsIdListAndStatus(Long[] goodsIds, String status);
 	
 }

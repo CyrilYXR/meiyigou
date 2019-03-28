@@ -26,5 +26,6 @@ public class CleanAllData {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath*:spring/application*.xml");
         CleanAllData cleanAllData = (CleanAllData) applicationContext.getBean("cleanAllData");
         cleanAllData.cleanAllData();
+        System.out.println("清除成功");
     }
 }

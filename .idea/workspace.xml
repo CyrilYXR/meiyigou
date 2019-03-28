@@ -1,35 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a2a0b51-4ccf-4ddd-93b5-acf6ddef66b5" name="Default Changelist" comment="solr实现分类搜索">
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.woff" afterDir="false" />
+    <list default="true" id="3a2a0b51-4ccf-4ddd-93b5-acf6ddef66b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_client_5_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-interface/src/main/java/com/meiyigou/content/service/ItemPageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ItemPageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageDeleteListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/properties/page.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-jms-consumer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/foot.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/head.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/item.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/spring-avtivemq.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/itemController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemDeleteListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meiyigou-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/meiyigou_content_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/meiyigou_content_service_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/meiyigou_manager_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/meiyigou_manager_web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/meiyigou_search_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/meiyigou_search_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/meiyigou_sellergoods_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/meiyigou_sellergoods_service_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-content-service/meiyigou-content-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-content-service/meiyigou-content-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-content-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-service.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-dao/src/main/resources/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-dao/src/main/resources/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-dao/target/classes/mybatis/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-dao/target/classes/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-dao/target/meiyigou-dao-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-dao/target/meiyigou-dao-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-manager-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-manager-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-pojo/src/main/java/com/meiyigou/pojo/TbItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-pojo/src/main/java/com/meiyigou/pojo/TbItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-pojo/target/classes/com/meiyigou/pojo/TbItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-pojo/target/classes/com/meiyigou/pojo/TbItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-pojo/target/meiyigou-pojo-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-pojo/target/meiyigou-pojo-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/contentController.js" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/contentController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiyigou-search-service/meiyigou-search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-search-service/meiyigou-search-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiyigou-search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-search-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/ItemCatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/ItemCatServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/TypeTemplateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/TypeTemplateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-interface/src/main/java/com/meiyigou/sellergoods/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-interface/src/main/java/com/meiyigou/sellergoods/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/admin/goods_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/admin/goods_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java" beforeDir="false" afterPath="$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java" afterDir="false" />
     </list>
     <list id="429bb92c-608d-4395-95eb-f05084bd4d6e" name="项目构建" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,159 +137,84 @@
     <session id="641129237">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.50" value="2" />
           <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.open.time.96" value="1" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="24" />
-          <entry key="conf" value="3" />
+          <entry key="class" value="29" />
+          <entry key="conf" value="5" />
           <entry key="css" value="2" />
-          <entry key="html" value="19" />
+          <entry key="ftl" value="8" />
+          <entry key="html" value="29" />
           <entry key="iml" value="2" />
-          <entry key="java" value="116" />
-          <entry key="js" value="11" />
-          <entry key="properties" value="16" />
+          <entry key="java" value="160" />
+          <entry key="js" value="23" />
+          <entry key="pom" value="1" />
+          <entry key="properties" value="24" />
           <entry key="svg" value="4" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="124" />
+          <entry key="xml" value="158" />
+          <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="24" />
+          <entry key="CLASS" value="29" />
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="19" />
+          <entry key="FTL" value="8" />
+          <entry key="HTML" value="29" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="116" />
-          <entry key="JavaScript" value="11" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="16" />
+          <entry key="JAVA" value="160" />
+          <entry key="JavaScript" value="23" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Properties" value="24" />
           <entry key="SVG" value="4" />
-          <entry key="XML" value="125" />
+          <entry key="XML" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="3" />
-          <entry key="html" value="1260" />
-          <entry key="java" value="4206" />
-          <entry key="js" value="1175" />
-          <entry key="properties" value="21" />
+          <entry key="dummy" value="7" />
+          <entry key="ftl" value="1069" />
+          <entry key="html" value="1459" />
+          <entry key="java" value="7436" />
+          <entry key="js" value="1648" />
+          <entry key="properties" value="122" />
           <entry key="txt" value="52" />
-          <entry key="xml" value="304" />
+          <entry key="xml" value="685" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1260" />
-          <entry key="JAVA" value="4206" />
-          <entry key="JavaScript" value="1175" />
-          <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Properties" value="21" />
+          <entry key="FTL" value="1069" />
+          <entry key="HTML" value="1459" />
+          <entry key="JAVA" value="7436" />
+          <entry key="JavaScript" value="1648" />
+          <entry key="PLAIN_TEXT" value="59" />
+          <entry key="Properties" value="122" />
           <entry key="SQL" value="1" />
-          <entry key="XML" value="303" />
+          <entry key="XML" value="684" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="196" selection-start-line="196" selection-end-line="196" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ContentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.svg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/java/com/meiyigou/portal/controller/ItemSearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSearchService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -287,6 +234,15 @@
       <find>顶部</find>
       <find>{{</find>
       <find>findByParentId</find>
+      <find>update</find>
+      <find>andIsDeleteIs</find>
+      <find>insert</find>
+      <find>imageList</find>
+      <find>购物车</find>
+      <find>item.ht</find>
+      <find>itemHtml</find>
+      <find>item</find>
+      <find>local</find>
     </findStrings>
     <replaceStrings>
       <replace>mapper</replace>
@@ -305,40 +261,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-shop-web/src/main/resources/spring/spring-security.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/resources/properties/db.properties" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/resources/com.meiyigou.mapper/TbContentCategoryMapper.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/resources/com.meiyigou.mapper/TbSellerMapper.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/java/com/meiyigoumapper/TbAddressMapper.java" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/java/com/meiyigou/mapper/TbAddressMapper.java" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/java/mapper/TbContentMapper.java" />
-        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/resources/spring/applicationContext-dao.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-content-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-content-interface/src/main/java/com/meiyigou/content/service/ContentCategoryService.java" />
-        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ContentCategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/springmvc.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/meiyigou-sellergoods-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-sellergoods-interface/src/main/java/com/meiyigou/sellergoods/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/GoodsController.java" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/service/goodsService.js" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/controller/goodsController.js" />
-        <option value="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/admin/goods.html" />
-        <option value="$PROJECT_DIR$/meiyigou-common/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-content-service/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-shop-web/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/resources/spring/springmvc.xml" />
         <option value="$PROJECT_DIR$/meiyigou-solr-util/pom.xml" />
         <option value="$PROJECT_DIR$/meiyigou-solr-util/src/main/resources/Spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java" />
         <option value="$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/SolrUtil.java" />
         <option value="$PROJECT_DIR$/meiyigou-search-interface/pom.xml" />
         <option value="$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSeacrhService.java" />
@@ -351,11 +276,42 @@
         <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/ItemCatController.java" />
         <option value="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/ItemCatServiceImpl.java" />
         <option value="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/TypeTemplateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/meiyigou-search-service/pom.xml" />
-        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/search.html" />
-        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js" />
-        <option value="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java" />
         <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/meiyigou-pojo/src/main/java/com/meiyigou/pojo/TbItem.java" />
+        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js" />
+        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/contentController.js" />
+        <option value="$PROJECT_DIR$/meiyigou-sellergoods-interface/src/main/java/com/meiyigou/sellergoods/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/meiyigou-dao/src/main/resources/mybatis/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSearchService.java" />
+        <option value="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/ItemCatController.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ItemPageService.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/config/page.properties" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/head.ftl" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/foot.ftl" />
+        <option value="$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/admin/goods_edit.html" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/item.ftl" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/properties/page.properties" />
+        <option value="$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/search.html" />
+        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java" />
+        <option value="$PROJECT_DIR$/meiyigou-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-manager-web/pom.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchListener.java" />
+        <option value="$PROJECT_DIR$/meiyigou-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemDeleteListener.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/pom.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/spring-avtivemq.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-jms-consumer.xml" />
+        <option value="$PROJECT_DIR$/meiyigou-content-interface/src/main/java/com/meiyigou/content/service/ItemPageService.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ItemPageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageListener.java" />
+        <option value="$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageDeleteListener.java" />
       </list>
     </option>
   </component>
@@ -385,11 +341,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="meiyigou-search-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="meiyigou-content-interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="meiyigou-search-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="meiyigou-content-interface" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -460,6 +416,207 @@
               <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-manager-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meiyigou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meiyigou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="meiyigou-shop-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -467,10 +624,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/MyProjects/meiyigou-parent/meiyigou-search-service/pom.xml" />
+    <property name="SearchEverywhereHistoryKey" value="o&#9;FILE&#9;file://F:/MyProjects/meiyigou-parent/meiyigou-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml&#10;**&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553268787229" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553749258200" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -481,21 +638,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main\webapp" />
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main\webapp\js\service" />
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main\webapp\js\controller" />
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-search-service\src\main" />
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-search-service\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-content-service\src\main\resources\properties" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-solr-util\src\main" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.meiyigou.portal.controller" />
       <recent name="com.meiyigou.service" />
       <recent name="util" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-solr-util\src\main" />
-      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-content-service\src\main\resources\spring" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-search-service\src\main\resources\spring" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main\webapp\itemHtml" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-portal-web\src\main\webapp\js\controller" />
+      <recent name="F:\MyProjects\meiyigou-parent\meiyigou-content-service\src\main\webapp\WEB-INF\ftl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,7 +668,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.portal-web">
+  <component name="RunManager" selected="Maven.manager-web">
     <configuration name="CleanAllData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.meiyigou.solrutil.CleanAllData" />
       <module name="meiyigou-solr-util" />
@@ -699,8 +857,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SolrUtil" />
         <item itemvalue="Application.CleanAllData" />
+        <item itemvalue="Application.SolrUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -725,7 +883,14 @@
       <workItem from="1553000511743" duration="3317000" />
       <workItem from="1553075780596" duration="747000" />
       <workItem from="1553157207209" duration="17983000" />
-      <workItem from="1553219570164" duration="25703000" />
+      <workItem from="1553219570164" duration="25845000" />
+      <workItem from="1553269242170" duration="333000" />
+      <workItem from="1553349123414" duration="9768000" />
+      <workItem from="1553403113521" duration="19706000" />
+      <workItem from="1553576132603" duration="9740000" />
+      <workItem from="1553661026120" duration="1252000" />
+      <workItem from="1553671083700" duration="13456000" />
+      <workItem from="1553741420407" duration="2078000" />
     </task>
     <task id="LOCAL-00001" summary="项目构建">
       <created>1552834227889</created>
@@ -748,11 +913,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553183363811</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="solr实现分类搜索">
+      <created>1553268838173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553268838173</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79746000" />
+    <option name="totallyTimeSpent" value="136221000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -765,9 +937,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2859304" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -776,19 +947,20 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44588044" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5848142" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.41357028" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.4555735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.56058156" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.42326334" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.50075644" side_tool="true" weight="0.52342486" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3812601" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3812601" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -852,27 +1024,82 @@
     <MESSAGE value="solr实现分类搜索" />
     <option name="LAST_COMMIT_MESSAGE" value="solr实现分类搜索" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java</url>
+          <line>262</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-common/src/main/resources/properties/redis-config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1588">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="204">
+          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/ItemCatController.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1571">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="3">
+          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/java/com/meiyigou/shop/controller/UploadController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.4.RELEASE/spring-webmvc-4.2.4.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-4.2.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/foot.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        <state relative-caret-position="4964">
+          <caret line="292" selection-start-line="292" selection-end-line="292" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/resources/spring/spring-security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/controller/itemController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/config/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/meiyigou-dao/src/main/resources/properties/db.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -881,323 +1108,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/ContentController.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/resources/config/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-        </state>
+        <state relative-caret-position="-1639" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/resources/config/application.properties">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/config/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="39" selection-start-column="39" selection-end-column="39" />
+          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/contentController.js">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/spring-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="663">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/service/contentService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="77" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1086">
-          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/resources/spring/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/webapp/WEB-INF/web.xml.tld" />
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/resources/Spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/resources/Spring/applicationContext-solr.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-pojo/src/main/java/com/meiyigou/pojo/TbItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="77" column="57" selection-start-line="77" selection-start-column="57" selection-end-line="77" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/SolrUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/meiyigou-search-service.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/resources/spring/applicationContext-solr.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/service/searchService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/czFunction.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/ItemCatController.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/controller/baseController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#2519#2520#0" expanded="true" />
-            <element signature="e#2572#2573#0" expanded="true" />
-          </folding>
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-sellergoods-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="39" />
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-common/src/main/resources/properties/redis-config.properties">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/base_pagination.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/js/angular-select2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="221">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-common/src/main/java/util/FastDFSClient.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/item.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-common/src/main/resources/spring/applicationContext-redis.xml">
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/ftl/head.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#960#978#0" expanded="true" />
-            <element signature="e#1296#1311#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/TypeTemplateController.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/resources/properties/page.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/java/com/meiyigou/portal/controller/ContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-content-interface/src/main/java/com/meiyigou/content/service/ContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/css/pages-list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="133" selection-start-line="84" selection-start-column="133" selection-end-line="84" selection-end-column="133" />
+        <state relative-caret-position="5000">
+          <caret line="318" column="65" selection-start-line="318" selection-start-column="65" selection-end-line="318" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/ItemCatServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-41">
-          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="861">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-sellergoods-service/src/main/java/com/meiyigou/sellergoods/service/impl/TypeTemplateServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-solr-util/src/main/java/com/meiyigou/solrutil/CleanAllData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="155" lean-forward="true" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="374">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/java/com/meiyigou/portal/controller/ItemSearchController.java">
+    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-search-interface/src/main/java/com/meiyigou/search/service/ItemSearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/js/controller/searchController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="211">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemSearchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/resources/spring/applicationContext-jms-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-search-service/src/main/java/com/meiyigou/search/service/impl/ItemDeleteListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/js/controller/itemCatController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-tx.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="64" column="8" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/resources/spring/spring-avtivemq.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ContentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="139" column="37" selection-start-line="139" selection-start-column="37" selection-end-line="139" selection-end-column="37" />
+        <state relative-caret-position="170">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-manager-web/src/main/java/com/meiyigou/manager/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="139" column="49" selection-start-line="139" selection-start-column="49" selection-end-line="139" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-moon.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ItemPageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-pc.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-interface/src/main/java/com/meiyigou/content/service/ItemPageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-tb.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meiyigou-portal-web/src/main/webapp/fonts/icon-touch.svg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/resources/spring/applicationContext-jms-consumer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/PageDeleteListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/admin/goods_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4386">
+          <caret line="258" column="29" selection-start-line="258" selection-start-column="29" selection-end-line="258" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/admin/goods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-content-service/src/main/java/com/meiyigou/content/service/impl/ContentCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meiyigou-shop-web/src/main/webapp/js/controller/goodsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

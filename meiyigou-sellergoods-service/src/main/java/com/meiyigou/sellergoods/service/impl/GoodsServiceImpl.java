@@ -13,6 +13,8 @@ import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -201,8 +203,8 @@ public class GoodsServiceImpl implements GoodsService {
 		
 		TbGoodsExample example=new TbGoodsExample();
 		Criteria criteria = example.createCriteria();
-		criteria.andIsDeleteIsNull();
-		
+//		criteria.andIsDeleteIsNull();
+		criteria.andIsDeleteEqualTo("0");
 		if(goods!=null){
 			if(goods.getSellerId()!=null && goods.getSellerId().length()>0){
 				//criteria.andSellerIdLike("%"+goods.getSellerId()+"%");
@@ -243,6 +245,22 @@ public class GoodsServiceImpl implements GoodsService {
 			tbGoods.setAuditStatus(status);
 			goodsMapper.updateByPrimaryKey(tbGoods);
 		}
+	}
+
+	/**
+	 * 根据SPU的id集合查询SKU列表
+	 * @param goodsIds
+	 * @param status
+	 * @return
+	 */
+	@Override
+	public List<TbItem> findItemListByGoodsIdListAndStatus(Long[] goodsIds, String status){
+
+		TbItemExample example = new TbItemExample();
+        TbItemExample.Criteria criteria = example.createCriteria();
+        criteria.andStatusEqualTo(status);
+        criteria.andGoodsIdIn(Arrays.asList(goodsIds));
+        return itemMapper.selectByExample(example);
 	}
 
 }

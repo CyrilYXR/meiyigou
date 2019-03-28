@@ -5,6 +5,7 @@ import com.meiyigou.pojo.TbItem;
 import com.meiyigou.search.service.ItemSearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.solr.core.SolrTemplate;
 import org.springframework.data.solr.core.query.*;
@@ -49,6 +50,21 @@ public class ItemSearchServiceImpl implements ItemSearchService {
         }
 
         return map;
+    }
+
+    @Override
+    public void importList(List list) {
+        solrTemplate.saveBeans(list);
+        solrTemplate.commit();
+    }
+
+    @Override
+    public void deleteByGoodsIds(List goodsIds) {
+        SolrDataQuery query = new SimpleQuery();
+        Criteria criteria = new Criteria("item_goodsid").in(goodsIds);
+        query.addCriteria(criteria);
+        solrTemplate.delete(query);
+        solrTemplate.commit();
     }
 
     //查询列表
@@ -128,6 +144,21 @@ public class ItemSearchServiceImpl implements ItemSearchService {
         query.setOffset((pageNo-1)*pageSize);
         //每页记录数
         query.setRows(pageSize);
+
+        //排序
+        String sortValue = (String) searchMap.get("sort"); //升序ASC,降序DESC
+        String sortField = (String) searchMap.get("sortField");  //排序字段
+        if(sortValue != null && !"".equals(sortField)){
+            if("ASC".equals(sortValue)){
+                Sort sort = new Sort(Sort.Direction.ASC, "item_"+sortField);
+                query.addSort(sort);
+            }
+            if("DESC".equals(sortValue)){
+                Sort sort = new Sort(Sort.Direction.DESC, "item_"+sortField);
+                query.addSort(sort);
+            }
+        }
+
 
         //高亮页对象
         HighlightPage<TbItem> page = solrTemplate.queryForHighlightPage(query, TbItem.class);

@@ -54,6 +54,7 @@ public class GoodsController {
 
         String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
         goods.getGoods().setSellerId(sellerId);   //设置商家id
+		goods.getGoods().setIsDelete("0");
 
         try {
 			goodsService.add(goods);
