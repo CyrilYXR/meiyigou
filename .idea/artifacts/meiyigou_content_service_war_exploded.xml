@@ -76,8 +76,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.7" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.7" />
-          <element id="archive" name="meiyigou-content-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="meiyigou-content-interface" />
+          <element id="archive" name="meiyigou-contentpage-interface-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="meiyigou-contentpage-interface" />
           </element>
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.23" />
           <element id="library" level="project" name="Maven: org.apache.activemq:activemq-client:5.13.4" />

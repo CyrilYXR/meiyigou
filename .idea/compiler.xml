@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="meiyigou-common" />
-        <module name="meiyigou-content-interface" />
         <module name="meiyigou-content-service" />
+        <module name="meiyigou-contentpage-interface" />
         <module name="meiyigou-dao" />
         <module name="meiyigou-manager-web" />
         <module name="meiyigou-pojo" />
@@ -19,12 +19,14 @@
         <module name="meiyigou-sellergoods-service" />
         <module name="meiyigou-shop-web" />
         <module name="meiyigou-solr-util" />
+        <module name="meiyigou-user-interface" />
+        <module name="meiyigou-user-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="meiyigou-common" target="1.7" />
-      <module name="meiyigou-content-interface" target="1.7" />
       <module name="meiyigou-content-service" target="1.7" />
+      <module name="meiyigou-contentpage-interface" target="1.7" />
       <module name="meiyigou-dao" target="1.7" />
       <module name="meiyigou-manager-web" target="1.7" />
       <module name="meiyigou-parent" target="1.7" />
@@ -36,6 +38,8 @@
       <module name="meiyigou-sellergoods-service" target="1.7" />
       <module name="meiyigou-shop-web" target="1.7" />
       <module name="meiyigou-solr-util" target="1.7" />
+      <module name="meiyigou-user-interface" target="1.7" />
+      <module name="meiyigou-user-service" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

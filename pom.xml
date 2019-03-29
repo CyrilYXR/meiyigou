@@ -15,12 +15,14 @@
         <module>meiyigou-sellergoods-service</module>
         <module>meiyigou-shop-web</module>
         <module>meiyigou-manager-web</module>
-        <module>meiyigou-content-interface</module>
+        <module>meiyigou-contentpage-interface</module>
         <module>meiyigou-content-service</module>
         <module>meiyigou-portal-web</module>
         <module>meiyigou-solr-util</module>
         <module>meiyigou-search-interface</module>
         <module>meiyigou-search-service</module>
+        <module>meiyigou-user-interface</module>
+        <module>meiyigou-user-service</module>
     </modules>
     <packaging>pom</packaging>
 
