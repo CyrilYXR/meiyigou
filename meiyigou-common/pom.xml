@@ -36,6 +36,13 @@
             <version>1.7.2.RELEASE</version>
         </dependency>
 
+        <!--Cookie工具类需要-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 

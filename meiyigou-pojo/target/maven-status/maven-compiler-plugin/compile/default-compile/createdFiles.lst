@@ -19,6 +19,7 @@ com\meiyigou\pojogroup\Specification.class
 com\meiyigou\pojo\TbFreightTemplateExample.class
 com\meiyigou\pojo\TbItemCatExample$GeneratedCriteria.class
 com\meiyigou\pojo\TbOrderItemExample.class
+com\meiyigou\pojogroup\Cart.class
 com\meiyigou\pojo\TbOrderItem.class
 com\meiyigou\pojo\TbFreightTemplate.class
 com\meiyigou\pojo\TbSellerExample$Criterion.class
