@@ -2,7 +2,7 @@ package com.meiyigou.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.fastjson.JSON;
-import com.meiyigou.content.service.ItemPageService;
+import com.meiyigou.contentpage.service.ItemPageService;
 import com.meiyigou.pojo.TbGoods;
 import com.meiyigou.pojo.TbItem;
 import com.meiyigou.pojogroup.Goods;

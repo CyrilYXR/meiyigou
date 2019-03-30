@@ -28,7 +28,7 @@
         </dependency>
         <dependency>
             <groupId>com.meiyigou</groupId>
-            <artifactId>meiyigou-user-interface</artifactId>
+            <artifactId>meiyigou-usercart-interface</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
 

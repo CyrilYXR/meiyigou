@@ -41,8 +41,8 @@
           <element id="archive" name="meiyigou-search-interface-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="meiyigou-search-interface" />
           </element>
-          <element id="archive" name="meiyigou-user-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="meiyigou-user-interface" />
+          <element id="archive" name="meiyigou-usercart-interface-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="meiyigou-usercart-interface" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.2.4.RELEASE" />

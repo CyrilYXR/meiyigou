@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="meiyigou-usercart-service:war">
+    <output-path>$PROJECT_DIR$/meiyigou-usercart-service/target</output-path>
+    <root id="archive" name="meiyigou-usercart-service-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="meiyigou-usercart-service:war exploded" />
+    </root>
+  </artifact>
+</component>

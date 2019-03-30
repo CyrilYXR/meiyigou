@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="meiyigou-user-service:war exploded">
-    <output-path>$PROJECT_DIR$/meiyigou-user-service/target/meiyigou-user-service-1.0.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/meiyigou-usercart-service/target/meiyigou-user-service-1.0.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="meiyigou-user-service" />
+          <element id="module-output" name="meiyigou-usercart-service" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" />
@@ -64,8 +64,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.7" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.7" />
-          <element id="archive" name="meiyigou-user-interface-1.0.0-SNAPSHOT.jar">
-            <element id="module-output" name="meiyigou-user-interface" />
+          <element id="archive" name="meiyigou-usercart-interface-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="meiyigou-usercart-interface" />
           </element>
           <element id="archive" name="meiyigou-common-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="meiyigou-common" />
@@ -86,9 +86,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/meiyigou-user-service/target/meiyigou-user-service-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/meiyigou-usercart-service/target/meiyigou-user-service-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="meiyigou-user-service/web/Web" />
+      <element id="javaee-facet-resources" facet="meiyigou-usercart-service/web/Web" />
     </root>
   </artifact>
 </component>

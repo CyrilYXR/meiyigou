@@ -1,7 +1,7 @@
 package com.meiyigou.portal.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.meiyigou.content.service.ContentService;
+import com.meiyigou.contentpage.service.ContentService;
 import com.meiyigou.pojo.TbContent;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

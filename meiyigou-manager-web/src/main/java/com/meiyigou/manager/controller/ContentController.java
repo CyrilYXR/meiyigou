@@ -1,7 +1,7 @@
 package com.meiyigou.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.meiyigou.content.service.ContentService;
+import com.meiyigou.contentpage.service.ContentService;
 import com.meiyigou.pojo.TbContent;
 import entity.PageResult;
 import entity.Result;
@@ -102,7 +102,7 @@ public class ContentController {
 	
 		/**
 	 * 查询+分页
-	 * @param brand
+	 * @param content
 	 * @param page
 	 * @param rows
 	 * @return

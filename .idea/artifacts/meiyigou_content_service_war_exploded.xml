@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="meiyigou-content-service" />
+          <element id="module-output" name="meiyigou-contentpage-service" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" />
@@ -87,9 +87,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/meiyigou-content-service/target/meiyigou-content-service-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/meiyigou-contentpage-service/target/meiyigou-content-service-1.0.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="meiyigou-content-service/web/Web" />
+      <element id="javaee-facet-resources" facet="meiyigou-contentpage-service/web/Web" />
     </root>
   </artifact>
 </component>

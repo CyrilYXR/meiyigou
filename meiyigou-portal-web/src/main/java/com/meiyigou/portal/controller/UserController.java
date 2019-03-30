@@ -1,13 +1,12 @@
 package com.meiyigou.portal.controller;
 import java.util.List;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.meiyigou.pojo.TbUser;
-import com.meiyigou.user.service.UserService;
+import com.meiyigou.usercart.service.UserService;
 
 import entity.PageResult;
 import entity.Result;

@@ -16,13 +16,15 @@
         <module>meiyigou-shop-web</module>
         <module>meiyigou-manager-web</module>
         <module>meiyigou-contentpage-interface</module>
-        <module>meiyigou-content-service</module>
+        <module>meiyigou-contentpage-service</module>
         <module>meiyigou-portal-web</module>
         <module>meiyigou-solr-util</module>
         <module>meiyigou-search-interface</module>
         <module>meiyigou-search-service</module>
-        <module>meiyigou-user-interface</module>
-        <module>meiyigou-user-service</module>
+        <module>meiyigou-usercart-interface</module>
+        <module>meiyigou-usercart-service</module>
+        <module>meiyigou-orderpay-interface</module>
+        <module>meiyigou-orderpay-service</module>
     </modules>
     <packaging>pom</packaging>
 

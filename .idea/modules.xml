@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/meiyigou-common/meiyigou-common.iml" filepath="$PROJECT_DIR$/meiyigou-common/meiyigou-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/meiyigou-content-service/meiyigou-content-service.iml" filepath="$PROJECT_DIR$/meiyigou-content-service/meiyigou-content-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-contentpage-interface/meiyigou-contentpage-interface.iml" filepath="$PROJECT_DIR$/meiyigou-contentpage-interface/meiyigou-contentpage-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-contentpage-service/meiyigou-contentpage-service.iml" filepath="$PROJECT_DIR$/meiyigou-contentpage-service/meiyigou-contentpage-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-dao/meiyigou-dao.iml" filepath="$PROJECT_DIR$/meiyigou-dao/meiyigou-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" filepath="$PROJECT_DIR$/meiyigou-manager-web/meiyigou-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-orderpay-interface/meiyigou-orderpay-interface.iml" filepath="$PROJECT_DIR$/meiyigou-orderpay-interface/meiyigou-orderpay-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-orderpay-service/meiyigou-orderpay-service.iml" filepath="$PROJECT_DIR$/meiyigou-orderpay-service/meiyigou-orderpay-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-parent.iml" filepath="$PROJECT_DIR$/meiyigou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" filepath="$PROJECT_DIR$/meiyigou-pojo/meiyigou-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-portal-web/meiyigou-portal-web.iml" filepath="$PROJECT_DIR$/meiyigou-portal-web/meiyigou-portal-web.iml" />
@@ -16,8 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" filepath="$PROJECT_DIR$/meiyigou-sellergoods-service/meiyigou-sellergoods-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-shop-web/meiyigou-shop-web.iml" filepath="$PROJECT_DIR$/meiyigou-shop-web/meiyigou-shop-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/meiyigou-solr-util/meiyigou-solr-util.iml" filepath="$PROJECT_DIR$/meiyigou-solr-util/meiyigou-solr-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/meiyigou-user-interface/meiyigou-user-interface.iml" filepath="$PROJECT_DIR$/meiyigou-user-interface/meiyigou-user-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/meiyigou-user-service/meiyigou-user-service.iml" filepath="$PROJECT_DIR$/meiyigou-user-service/meiyigou-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-usercart-interface/meiyigou-usercart-interface.iml" filepath="$PROJECT_DIR$/meiyigou-usercart-interface/meiyigou-usercart-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meiyigou-usercart-service/meiyigou-usercart-service.iml" filepath="$PROJECT_DIR$/meiyigou-usercart-service/meiyigou-usercart-service.iml" />
     </modules>
   </component>
 </project>

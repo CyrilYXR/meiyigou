@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="meiyigou-contentpage-service:war">
+    <output-path>$PROJECT_DIR$/meiyigou-contentpage-service/target</output-path>
+    <root id="archive" name="meiyigou-contentpage-service-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="meiyigou-contentpage-service:war exploded" />
+    </root>
+  </artifact>
+</component>

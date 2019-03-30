@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="meiyigou-common" />
-        <module name="meiyigou-content-service" />
         <module name="meiyigou-contentpage-interface" />
+        <module name="meiyigou-contentpage-service" />
         <module name="meiyigou-dao" />
         <module name="meiyigou-manager-web" />
+        <module name="meiyigou-orderpay-interface" />
+        <module name="meiyigou-orderpay-service" />
         <module name="meiyigou-pojo" />
         <module name="meiyigou-portal-web" />
         <module name="meiyigou-search-interface" />
@@ -19,16 +21,18 @@
         <module name="meiyigou-sellergoods-service" />
         <module name="meiyigou-shop-web" />
         <module name="meiyigou-solr-util" />
-        <module name="meiyigou-user-interface" />
-        <module name="meiyigou-user-service" />
+        <module name="meiyigou-usercart-interface" />
+        <module name="meiyigou-usercart-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="meiyigou-common" target="1.7" />
-      <module name="meiyigou-content-service" target="1.7" />
       <module name="meiyigou-contentpage-interface" target="1.7" />
+      <module name="meiyigou-contentpage-service" target="1.7" />
       <module name="meiyigou-dao" target="1.7" />
       <module name="meiyigou-manager-web" target="1.7" />
+      <module name="meiyigou-orderpay-interface" target="1.7" />
+      <module name="meiyigou-orderpay-service" target="1.7" />
       <module name="meiyigou-parent" target="1.7" />
       <module name="meiyigou-pojo" target="1.7" />
       <module name="meiyigou-portal-web" target="1.7" />
@@ -38,8 +42,8 @@
       <module name="meiyigou-sellergoods-service" target="1.7" />
       <module name="meiyigou-shop-web" target="1.7" />
       <module name="meiyigou-solr-util" target="1.7" />
-      <module name="meiyigou-user-interface" target="1.7" />
-      <module name="meiyigou-user-service" target="1.7" />
+      <module name="meiyigou-usercart-interface" target="1.7" />
+      <module name="meiyigou-usercart-service" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

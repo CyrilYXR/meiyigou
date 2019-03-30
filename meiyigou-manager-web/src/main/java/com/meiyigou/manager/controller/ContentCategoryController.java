@@ -1,7 +1,7 @@
 package com.meiyigou.manager.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.meiyigou.content.service.ContentCategoryService;
+import com.meiyigou.contentpage.service.ContentCategoryService;
 import com.meiyigou.pojo.TbContentCategory;
 import entity.PageResult;
 import entity.Result;
