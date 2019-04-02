@@ -43,6 +43,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--http工具类-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
+
     </dependencies>
 
 

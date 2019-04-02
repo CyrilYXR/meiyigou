@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="meiyigou-orderpay-service:war">
+    <output-path>$PROJECT_DIR$/meiyigou-orderpay-service/target</output-path>
+    <root id="archive" name="meiyigou-orderpay-service-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="meiyigou-orderpay-service:war exploded" />
+    </root>
+  </artifact>
+</component>

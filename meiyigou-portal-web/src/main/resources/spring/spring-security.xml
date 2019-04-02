@@ -15,11 +15,14 @@
     <http pattern="/index.html" security="none"></http>
     <http pattern="/register.html" security="none"></http>
     <http pattern="/cart.html" security="none"></http>
+    <http pattern="/itemHtml/**" security="none"></http>
 
     <http pattern="/user/add.do" security="none"></http>
     <http pattern="/user/sendCode.do" security="none"></http>
     <http pattern="/content/*.do" security="none"></http>
     <http pattern="/itemSearch/*.do" security="none"></http>
+    <!--<http pattern="/pay/*.do" security="none"></http>-->
+
     <!--无法获取SpringSecurity的上下文-->
     <!--<http pattern="/cart/*.do" security="none"></http>-->
 

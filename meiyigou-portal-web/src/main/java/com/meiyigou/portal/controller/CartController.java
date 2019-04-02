@@ -7,6 +7,7 @@ import com.meiyigou.usercart.service.CartService;
 import entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import util.CookieUtil;
@@ -29,7 +30,15 @@ public class CartController {
     private CartService cartService;
 
     @RequestMapping("/addGoodsToCartList")
+    // 跨域请求的注解方式实现Spring 4.2或以上版本支持
+    // @CrossOrigin(origins="http://localhost:9105",allowCredentials="true")
     public Result addGoodsToCartList(Long itemId, Integer num){
+
+        /*//跨域请求
+        //可以访问的域：http://localhost:9105  可用*代替全部域
+        response.setHeader("Access-Control-Allow-Origin", "http://localhost:9103");
+        //允许使用携带凭证（cookie）
+        response.setHeader("Access-Control-Allow-Credentials", "true");*/
 
         String name = SecurityContextHolder.getContext().getAuthentication().getName();
         System.out.println("当前登录名"+name);

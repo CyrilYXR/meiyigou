@@ -6,16 +6,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
 	<title>产品详情页</title>
-	 <link rel="icon" href="assets/img/favicon.ico">
+	 <link rel="icon" href="../assets/img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="css/webbase.css" />
-    <link rel="stylesheet" type="text/css" href="css/pages-item.css" />
-    <link rel="stylesheet" type="text/css" href="css/pages-zoom.css" />
-    <link rel="stylesheet" type="text/css" href="css/widget-cartPanelView.css" />
+    <link rel="stylesheet" type="text/css" href="../css/webbase.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pages-item.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pages-zoom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/widget-cartPanelView.css" />
 
-    <script type="text/javascript" src="plugins/angularjs/angular.min.js">  </script>
-    <script type="text/javascript" src="js/base.js">  </script>
-    <script type="text/javascript" src="js/controller/itemController.js">  </script>
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js">  </script>
+    <script type="text/javascript" src="../js/base.js">  </script>
+    <script type="text/javascript" src="../js/controller/itemController.js">  </script>
 
     <script>
         var skuList=[
@@ -174,7 +174,7 @@
 							<div class="fl">
 								<ul class="btn-choose unstyled">
 									<li>
-										<a href="#" ng-click="addToCart()" target="_blank" class="sui-btn  btn-danger addshopcar">加入购物车</a>
+										<a ng-click="addToCart()" target="_blank" class="sui-btn  btn-danger addshopcar">加入购物车</a>
 									</li>
 								</ul>
 							</div>
@@ -213,7 +213,7 @@
 								<li>
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="img/_/part01.png" />
+											<img src="../img/_/part01.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s (A1699)</em>
@@ -232,7 +232,7 @@
 								<li>
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="img/_/part02.png" />
+											<img src="../img/_/part02.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s (A1699)</em>
@@ -247,11 +247,14 @@
 											<a href="javascript:void(0);" class="sui-btn btn-bordered">加入购物车</a>
 										</div>
 									</div>
+
+
+
 								</li>
 								<li>
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="img/_/part03.png" />
+											<img src="../img/_/part03.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s (A1699)</em>
@@ -268,7 +271,7 @@
 									</div>
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="img/_/part02.png" />
+											<img src="../img/_/part02.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s (A1699)</em>
@@ -285,7 +288,7 @@
 									</div>
 									<div class="list-wrap">
 										<div class="p-img">
-											<img src="img/_/part03.png" />
+											<img src="../img/_/part03.png" />
 										</div>
 										<div class="attr">
 											<em>Apple苹果iPhone 6s (A1699)</em>
@@ -315,7 +318,7 @@
 							<div class="fl master">
 								<div class="list-wrap">
 									<div class="p-img">
-										<img src="img/_/l-m01.png" />
+										<img src="../img/_/l-m01.png" />
 									</div>
 									<em>￥5299</em>
 									<i>+</i>
@@ -325,7 +328,7 @@
 								<ul class="suit-list">
 									<li class="">
 										<div id="">
-											<img src="img/_/dp01.png" />
+											<img src="../img/_/dp01.png" />
 										</div>
 										<i>Feless费勒斯VR</i>
 										<label data-toggle="checkbox" class="checkbox-pretty">
@@ -333,21 +336,21 @@
   </label>
 									</li>
 									<li class="">
-										<div id=""><img src="img/_/dp02.png" /> </div>
+										<div id=""><img src="../img/_/dp02.png" /> </div>
 										<i>Feless费勒斯VR</i>
 										<label data-toggle="checkbox" class="checkbox-pretty">
     <input type="checkbox"><span>50</span>
   </label>
 									</li>
 									<li class="">
-										<div id=""><img src="img/_/dp03.png" /></div>
+										<div id=""><img src="../img/_/dp03.png" /></div>
 										<i>Feless费勒斯VR</i>
 										<label data-toggle="checkbox" class="checkbox-pretty">
     <input type="checkbox"><span>59</span>
   </label>
 									</li>
 									<li class="">
-										<div id=""><img src="img/_/dp04.png" /></div>
+										<div id=""><img src="../img/_/dp04.png" /></div>
 										<i>Feless费勒斯VR</i>
 										<label data-toggle="checkbox" class="checkbox-pretty">
     <input type="checkbox"><span>99</span>
@@ -431,7 +434,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike01.png" />
+									<img src="../img/_/itemlike01.png" />
 								</div>
 								<div class="attr">
 									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -450,7 +453,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike02.png" />
+									<img src="../img/_/itemlike02.png" />
 								</div>
 								<div class="attr">
 									<em>Apple苹果iPhone 6s/6s Plus 16G 64G 128G</em>
@@ -469,7 +472,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike03.png" />
+									<img src="../img/_/itemlike03.png" />
 								</div>
 								<div class="attr">
 									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -488,7 +491,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike04.png" />
+									<img src="../img/_/itemlike04.png" />
 								</div>
 								<div class="attr">
 									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -507,7 +510,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike05.png" />
+									<img src="../img/_/itemlike05.png" />
 								</div>
 								<div class="attr">
 									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>
@@ -526,7 +529,7 @@
 						<li class="yui3-u-1-6">
 							<div class="list-wrap">
 								<div class="p-img">
-									<img src="img/_/itemlike06.png" />
+									<img src="../img/_/itemlike06.png" />
 								</div>
 								<div class="attr">
 									<em>DELL戴尔Ins 15MR-7528SS 15英寸 银色 笔记本</em>

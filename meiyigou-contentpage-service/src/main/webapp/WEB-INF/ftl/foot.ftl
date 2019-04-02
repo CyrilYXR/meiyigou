@@ -105,7 +105,7 @@
                     </div>
                     <div class="yui3-u-1-6">
                         <h4>帮助中心</h4>
-                        <img src="img/wx_cz.jpg">
+                        <img src="../img/wx_cz.jpg">
                     </div>
                 </div>
             </div>
@@ -267,7 +267,7 @@
 
 
 
-<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript">
     $(function(){
         $("#service").hover(function(){
@@ -283,10 +283,10 @@
 
     })
 </script>
-<script type="text/javascript" src="js/model/cartModel.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.easing/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/plugins/sui/sui.min.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.jqzoom/jquery.jqzoom.js"></script>
-<script type="text/javascript" src="js/plugins/jquery.jqzoom/zoom.js"></script>
-<script type="text/javascript" src="index/index.js"></script>
+<script type="text/javascript" src="../js/model/cartModel.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript" src="../js/plugins/sui/sui.min.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery.jqzoom/jquery.jqzoom.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery.jqzoom/zoom.js"></script>
+<script type="text/javascript" src="../index/index.js"></script>
 

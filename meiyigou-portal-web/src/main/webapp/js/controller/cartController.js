@@ -23,6 +23,63 @@ app.controller('cartController',function($scope,cartService){
         );
     }
 
+    //获取当前用户的收货地址列表
+    $scope.findAddressList=function () {
+        cartService.findAddressList().success(
+            function (response) {
+                $scope.addressList=response;
+                for(var i=0;i<$scope.addressList.length;i++){
+                    if($scope.addressList[i].isDefault=='1'){
+                        $scope.address=$scope.addressList[i];
+                        break;
+                    }
+                }
+            }
+        )
+    }
+
+    //选择地址
+    $scope.selectAddress=function(address){
+        $scope.address=address;
+    }
+
+    //判断是否是当前选中的地址
+    $scope.isSelectedAddress=function(address){
+        if(address==$scope.address){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    //订单对象的支付方式字段
+    $scope.order={paymentType:'1'};
+    //选择支付方式
+    $scope.selectPayType=function(type){
+        $scope.order.paymentType=type;
+    }
+
+    //提交订单
+    $scope.submitOrder=function () {
+        $scope.order.receiverAreaName=$scope.address.address;  //收货地址
+        $scope.order.receiverMobile=$scope.address.mobile;
+        $scope.order.receiver=$scope.address.contact;
+
+        cartService.submitOrder($scope.order).success(
+            function (response) {
+                if(response.success){  //在线支付
+                    if($scope.order.paymentType=='1'){
+                        location.href='pay/goAlipay.do';
+                    } else { //货到付款
+                        location.href='paysuccess.html#?total_amount='+$scope.totalValue.totalMoney+'&paymentType='+$scope.order.paymentType;
+                    }
+                } else {
+                    alert(response.message);
+                }
+            }
+        )
+    }
+
 
 
 });
