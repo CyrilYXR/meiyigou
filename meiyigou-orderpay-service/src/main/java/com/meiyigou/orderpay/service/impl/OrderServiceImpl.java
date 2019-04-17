@@ -6,16 +6,14 @@ import java.util.List;
 
 import com.meiyigou.mapper.TbOrderItemMapper;
 import com.meiyigou.mapper.TbPayLogMapper;
-import com.meiyigou.pojo.TbOrderItem;
-import com.meiyigou.pojo.TbPayLog;
+import com.meiyigou.pojo.*;
 import com.meiyigou.pojogroup.Cart;
+import com.meiyigou.pojogroup.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.meiyigou.mapper.TbOrderMapper;
-import com.meiyigou.pojo.TbOrder;
-import com.meiyigou.pojo.TbOrderExample;
 import com.meiyigou.pojo.TbOrderExample.Criteria;
 import com.meiyigou.orderpay.service.OrderService;
 
@@ -120,6 +118,7 @@ public class OrderServiceImpl implements OrderService {
 			payLog.setOrderList(orderIdList.toString().replace("[","").replace("]",""));
 			payLog.setTotalFee((long) (total_money*100));  //支付金额
 			payLog.setTradeState("0");  //交易状态
+			payLog.setPayType("1");  //支付类型
 			payLogMapper.insert(payLog);
 			redisTemplate.boundHashOps("payLog").put(order.getUserId(), payLog);
 		}
@@ -251,6 +250,41 @@ public class OrderServiceImpl implements OrderService {
         redisTemplate.boundHashOps("payLog").delete(payLog.getUserId());
 
         System.out.println("=====执行更新订单和支付日志表信息");
+
     }
+
+	@Override
+	public PageResult findOrderPage(TbOrder tbOrder, int pageNum, int pageSize) {
+		PageHelper.startPage(pageNum, pageSize);
+
+		TbOrderExample example = new TbOrderExample();
+        Criteria criteria = example.createCriteria();
+        criteria.andUserIdEqualTo(tbOrder.getUserId());
+        if(tbOrder!=null){
+            //如果状态为空表示查询全部
+            if(tbOrder.getStatus()!=null && tbOrder.getStatus().length()>0){
+                criteria.andStatusEqualTo(tbOrder.getStatus());
+            }
+        }
+
+        Page<TbOrder> tbOrderPage = (Page<TbOrder>) orderMapper.selectByExample(example);
+        List<TbOrder> tbOrderList = tbOrderPage.getResult();
+
+        List<Order> orders = new ArrayList<>();
+        for(TbOrder orderItem:tbOrderList){
+            Order order = new Order();
+            order.setOrder(orderItem);
+            TbOrderItemExample itemExample = new TbOrderItemExample();
+            TbOrderItemExample.Criteria itemCriteria = itemExample.createCriteria();
+            itemCriteria.andOrderIdEqualTo(orderItem.getOrderId());
+            List<TbOrderItem> tbOrderItems = orderItemMapper.selectByExample(itemExample);
+            order.setOrderItemList(tbOrderItems);
+            orders.add(order);
+        }
+
+        return new PageResult(tbOrderPage.getTotal(), orders);
+
+	}
+
 
 }

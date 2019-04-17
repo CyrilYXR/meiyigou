@@ -57,5 +57,12 @@ public interface OrderItemService {
 	 * @return
 	 */
 	public PageResult findPage(TbOrderItem orderItem, int pageNum, int pageSize);
+
+	/**
+	 * 根据订单id查询order_item表
+	 * @param orderId
+	 * @return
+	 */
+	List<TbOrderItem> findByOrderId(Long orderId);
 	
 }

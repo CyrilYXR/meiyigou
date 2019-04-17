@@ -72,4 +72,7 @@ public interface OrderService {
 	 * @param transaction_id  trad_no
 	 */
 	void updateOrderStatus(String out_trade_no, String transaction_id);
+
+	PageResult findOrderPage(TbOrder tbOrder, int pageNum, int pageSize);
+
 }

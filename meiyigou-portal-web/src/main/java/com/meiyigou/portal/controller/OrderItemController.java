@@ -110,5 +110,15 @@ public class OrderItemController {
 	public PageResult search(@RequestBody TbOrderItem orderItem, int page, int rows  ){
 		return orderItemService.findPage(orderItem, page, rows);		
 	}
+
+	/**
+	 * 根据订单id查询order_item表
+	 * @param orderId
+	 * @return
+	 */
+	@RequestMapping("/findByOrderId")
+	public List<TbOrderItem> findByOrderId(Long orderId){
+		return orderItemService.findByOrderId(orderId);
+	}
 	
 }

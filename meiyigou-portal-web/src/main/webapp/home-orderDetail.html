@@ -10,9 +10,13 @@
 
     <link rel="stylesheet" type="text/css" href="css/webbase.css" />
     <link rel="stylesheet" type="text/css" href="css/pages-seckillOrder.css" />
+
+	<script type="text/javascript" src="plugins/angularjs/angular.min.js">  </script>
+	<script type="text/javascript" src="js/base.js">  </script>
+	<script type="text/javascript" src="js/controller/orderController.js">  </script>
 </head>
 
-<body>
+<body ng-app="meiyigou" ng-controller="orderController" ng-init="findOrder();findOrderItem()">
     <!-- 头部栏位 -->
     <!--页面顶部-->
 <div id="nav-bottom">
@@ -22,19 +26,19 @@
 			<div class="py-container">
 				<div class="shortcut">
 					<ul class="fl">
-						<li class="f-item">品优购欢迎您！</li>
+						<li class="f-item">美宜购欢迎您！</li>
 						<li class="f-item">请<a href="login.html" target="_blank">登录</a>　<span><a href="register.html" target="_blank">免费注册</a></span></li>
 					</ul>
 					<ul class="fr">
 						<li class="f-item">我的订单</li>
 						<li class="f-item space"></li>
-						<li class="f-item"><a href="home.html" target="_blank">我的品优购</a></li>
+						<li class="f-item"><a href="home.html" target="_blank">我的美宜购</a></li>
 						<li class="f-item space"></li>
-						<li class="f-item">品优购会员</li>
+						<li class="f-item">美宜购会员</li>
 						<li class="f-item space"></li>
 						<li class="f-item">企业采购</li>
 						<li class="f-item space"></li>
-						<li class="f-item">关注品优购</li>
+						<li class="f-item">关注美宜购</li>
 						<li class="f-item space"></li>
 						<li class="f-item" id="service">
 							<span>客户服务</span>
@@ -57,7 +61,7 @@
 			<div class="py-container">
 				<div class="yui3-g Logo">
 					<div class="yui3-u Left logoArea">
-						<a class="logo-bd" title="品优购" href="JD-index.html" target="_blank"></a>
+						<a class="logo-bd" title="美宜购" href="JD-index.html" target="_blank"></a>
 					</div>
 					<div class="yui3-u Center searchArea">
 						<div class="search">
@@ -71,7 +75,7 @@
 						</div>
 						<div class="hotwords">
 							<ul>
-								<li class="f-item">品优购首发</li>
+								<li class="f-item">美宜购首发</li>
 								<li class="f-item">亿元优惠</li>
 								<li class="f-item">9.9元团购</li>
 								<li class="f-item">每满99减30</li>
@@ -107,7 +111,7 @@
 						<ul class="nav">
 							<li class="f-item">服装城</li>
 							<li class="f-item">美妆馆</li>
-							<li class="f-item">品优超市</li>
+							<li class="f-item">美宜超市</li>
 							<li class="f-item">全球购</li>
 							<li class="f-item">闪购</li>
 							<li class="f-item">团购</li>
@@ -197,19 +201,19 @@ $(function(){
                                         </div>
                                         <label>
                                             <span>提交订单</span>
-                                            <span>2016-06-27</span>
-                                            <span>13:03:53</span>
+                                            <span>{{order.createTime | date:'yyyy-MM-dd'}}</span>
+                                            <!--<span>{{order.createTime | date:'hh:mm:ss'}}</span>-->
                                         </label>
                                     </div>
-                                    <div class="current">
+                                    <div class="{{order.paymentTime==''?'todo':'current'}}">
                                         <div class="wrap">
                                         <div class="round">2</div>
                                         <div class="bar"></div>
                                         </div>
                                         <label>
                                             <span>付款成功</span>
-                                            <span>2016-06-27</span>
-                                            <span>13:03:53</span>
+											<span>{{order.paymentTime | date:'yyyy-MM-dd'}}</span>
+											<!--<span>{{order.paymentTime | date:'hh:mm:ss'}}</span>-->
                                         </label>
                                     </div>
                                     <div class="todo">
@@ -219,8 +223,8 @@ $(function(){
                                         </div>
                                         <label>
                                             <span>发货</span>
-                                            <span>2016-06-27</span>
-                                            <span>13:03:53</span>
+                                            <span></span>
+                                            <span></span>
                                         </label>
                                     </div>
                                     <div class="todo">
@@ -230,8 +234,8 @@ $(function(){
                                         </div>
                                         <label>
                                             <span>确认收货</span>
-                                            <span>2016-06-27</span>
-                                            <span>13:03:53</span>
+                                            <span></span>
+                                            <span></span>
                                         </label>
                                     </div>
                                     
@@ -241,25 +245,25 @@ $(function(){
                                         </div>
                                         <label>
                                             <span>评价晒单</span>
-                                            <span>2016-06-27</span>
-                                            <span>13:03:53</span>
+                                            <!--<span>2016-06-27</span>
+                                            <span>13:03:53</span>-->
                                         </label>
                                     </div>
                                     </div>
                             </div>
                             <div class="order-state">
-                                <p>当前订单状态：<span class="red">已发货</span></p>
-                                <p>还剩06天00小时 自动确认收货</p>
+                                <p>当前订单状态：<span class="red">{{orderStatus[order.status]}}</span></p>
+                                <!--<p>还剩06天00小时 自动确认收货</p>-->
                             </div>
                         </div>
                         <div class="order-info">
                             <h5>订单信息</h5>
-                            <p>收货地址：神茶减肥茶就观察及噶盘滚啊  </p>
-                            <p>订单单号：178789758976986</p>
-                            <p>下单时间：2017-06-04 09：03：03</p>
-                            <p>支付时间：2017-06-05  09：03：03</p>
-                            <p>支付方式：支付宝</p>
-                            <p>发货时间：201707-06-06 09：03：03</p>
+                            <p>收货地址：{{order.receiverAreaName}}  </p>
+                            <p>订单单号：{{order.orderId}}</p>
+                            <p>下单时间：{{order.createTime}}</p>
+                            <p>支付时间：{{order.paymentTime}}</p>
+                            <p>支付方式：{{paymentType[order.paymentType]}}</p>
+                            <p ng-if="order.consignTime!='">发货时间：{{order.consignTime}}</p>
                         </div>
                         <div class="order-goods">
                             <table class="sui-table">
@@ -271,39 +275,39 @@ $(function(){
                                         <th class="center" >状态</th>
                                     </thead>                                   
                              
-                                <tbody>                               
+                                <tbody ng-repeat="item in orderItemList">
                                     <tr>
-                                        <td colspan="5">订单编号：787587819591509</td>
+                                        <td colspan="5">订单编号：{{item.orderId}}</td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div class="typographic"><img src="img/goods.png" />
-                                                    <span>包邮 正品玛姬儿压缩面膜无纺布纸膜100粒 送泡瓶面膜刷喷瓶 新款</span>
-                                                    <span class="guige">规格：温泉喷雾150ml</span>
+                                                    <span>{{item.title}}</span>
+                                                    <span class="guige">规格：{{}}</span>
                                                 </div>
                                         </td>
                                         <td>
                                             <ul class="unstyled">
-                                                    <li class="o-price">¥599.00</li>	
-                                                    <li>¥299.00</li>											
+                                                    <!--<li class="o-price">¥{{item.price}}</li>-->
+                                                    <li>¥{{item.price}}</li>
                                                 </ul>
                                         </td>
-                                        <td>1</td>
+                                        <td>{{item.num}}</td>
                                         <td>无优惠</td>
-                                        <td>交易成功</td>
+                                        <td>{{orderStatus[order.status]}}</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="order-price">
-                                <p>商品总金额：￥1.8</p>
+                                <p>商品总金额：￥{{order.payment}}</p>
                                 <p>运费金额：，免费用</p>
                                 <p>使用优惠券：无</p>
-                                <h4 class="red">实际支付：￥1.8</h4>
+                                <h4 class="red">实际支付：￥{{order.payment}}</h4>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <!--猜你喜欢-->
-                        <div class="like-title">
+                        <!--<div class="like-title">
                             <div class="mt">
                                 <span class="fl"><strong>热卖单品</strong></span>
                             </div>
@@ -388,7 +392,7 @@ $(function(){
                                 </li>
 
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -497,8 +501,8 @@ $(function(){
 							<li>夺宝岛</li>
 							<li>DIY装机</li>
 							<li>延保服务</li>
-							<li>品优购E卡</li>
-							<li>品优购通信</li>
+							<li>美宜购E卡</li>
+							<li>美宜购通信</li>
 						</ul>
 					</div>
 					<div class="yui3-u-1-6">
@@ -520,8 +524,8 @@ $(function(){
 					<li>友情链接<span class="space"></span></li>
 					<li>关于我们</li>
 				</ul>
-				<p>地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100</p>
-				<p>京ICP备08001421号京公网安备110108007702</p>
+				<p>地址：广东财经大学25栋720  邮编510220  电话：159-159-8986 传真：010-1234567</p>
+				<p>=====公网安备信息=====</p>
 			</div>
 		</div>
 	</div>

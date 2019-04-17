@@ -1,6 +1,7 @@
 package com.meiyigou.portal.controller;
 import java.util.List;
 
+import com.meiyigou.pojogroup.Order;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -127,5 +128,17 @@ public class OrderController {
 	public void updateOrderStatus(String out_trade_no, String transaction_id){
 		orderService.updateOrderStatus(out_trade_no, transaction_id);
 	}
-	
+
+	/**
+	 * 查询订单列表
+	 * @param pageNum
+	 * @param pageSize
+	 * @return
+	 */
+	@RequestMapping("/findOrderPage")
+	public PageResult findOrderPage(TbOrder tbOrder, int pageNum, int pageSize){
+        String userName = SecurityContextHolder.getContext().getAuthentication().getName();
+        tbOrder.setUserId(userName);
+        return orderService.findOrderPage(tbOrder, pageNum, pageSize);
+	}
 }

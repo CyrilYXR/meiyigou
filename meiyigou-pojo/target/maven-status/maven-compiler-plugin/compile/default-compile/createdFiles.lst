@@ -42,6 +42,7 @@ com\meiyigou\pojogroup\Goods.class
 com\meiyigou\pojo\TbTypeTemplateExample$GeneratedCriteria.class
 com\meiyigou\pojo\TbSpecificationExample$GeneratedCriteria.class
 com\meiyigou\pojo\TbItemCatExample$Criterion.class
+com\meiyigou\pojogroup\Order.class
 com\meiyigou\pojo\TbSellerExample.class
 com\meiyigou\pojo\TbProvincesExample.class
 com\meiyigou\pojo\TbSellerExample$Criteria.class

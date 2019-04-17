@@ -98,7 +98,6 @@ public class CartServiceImpl implements CartService {
 
     @Override
     public void saveCartListToRedis(String userName, List<Cart> cartList) {
-
         redisTemplate.boundHashOps("cartList").put(userName, cartList);
         System.out.println("=====将购物车存入Redis");
     }
