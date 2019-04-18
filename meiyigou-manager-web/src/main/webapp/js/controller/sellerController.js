@@ -2,6 +2,8 @@
 app.controller('sellerController' ,function($scope,$controller   ,sellerService){	
 	
 	$controller('baseController',{$scope:$scope});//继承
+
+	$scope.statusList=['待审核','已审核','审核未通过','关闭'];
 	
     //读取列表数据绑定到表单中  
 	$scope.findAll=function(){

@@ -90,7 +90,8 @@
 		                                  <td class="text-center">
 											  <!--TODO 商品详情页信息 -->
 											  <!--TODO 商品上下架 -->
-											  <button type="button" class="btn bg-olive btn-xs" >详情</button>
+											  <!--<button type="button" class="btn bg-olive btn-xs" >详情</button>-->
+											  <button type="button" class="btn bg-olive btn-xs" data-toggle="modal" data-target="#sellerModal" ng-click="findOne(entity.id)">详情</button>
 		                                  </td>
 			                          </tr>
 
@@ -101,10 +102,114 @@
 							 
                         </div>
                         <!-- 数据表格 /-->
-                        
 
                      </div>
                     <!-- /.box-body -->
+
+  <!-- 商品详情 -->
+  <div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg" >
+		  <div class="modal-content">
+			  <div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				  <h3 id="myModalLabel">商品详情</h3>
+			  </div>
+			  <div class="modal-body">
+
+				  <ul class="nav nav-tabs">
+					  <li class="active"><a href="#home" data-toggle="tab">商品基本信息</a></li>
+					  <li><a href="#linkman" data-toggle="tab">商品图片</a></li>
+					  <li><a href="#certificate" data-toggle="tab">扩展属性</a></li>
+					  <li><a href="#ceo" data-toggle="tab">规格</a></li>
+				  </ul>
+
+				  <!-- 选项卡开始 -->
+				  <div id="myTabContent" class="tab-content">
+					  <div class="tab-pane active in" id="home">
+						  <br>
+						  <table class="table table-bordered table-striped"  width="800px">
+							  <tr>
+								  <td>商品名称</td>
+								  <td>{{entity.goods.goodsName}}</td>
+							  </tr>
+							  <tr>
+								  <td>品牌</td>
+								  <td>{{entity.goods.brandId}}</td>
+							  </tr>
+							  <tr>
+								  <td>副标题</td>
+								  <td>{{entity.goods.caption}}</td>
+							  </tr>
+							  <tr>
+								  <td>价格</td>
+								  <td>{{entity.goods.price}}</td>
+							  </tr>
+							  <tr>
+								  <td>商品介绍</td>
+								  <td>{{entity.goodsDesc.introduction}}</td>
+							  </tr>
+							  <tr>
+								  <td>包装列表</td>
+								  <td>{{entity.goodsDesc.packageList}}</td>
+							  </tr>
+							  <tr>
+								  <td>售后服务</td>
+								  <td>{{entity.goodsDesc.saleService}}</td>
+							  </tr>
+						  </table>
+					  </div>
+					  <div class="tab-pane fade" id="linkman">
+						  <br>
+						  <table class="table table-bordered table-striped table-hover dataTable">
+							  <thead>
+							  <tr>
+								  <th class="sorting">颜色</th>
+								  <th class="sorting">图片</th>
+							  </tr>
+							  </thead>
+							  <tbody>
+							  <tr ng-repeat="pojo in entity.goodsDesc.itemImages">
+								  <td>
+									  {{pojo.color}}
+								  </td>
+								  <td>
+									  <img alt="" src="{{pojo.url}}" width="100px" height="100px">
+								  </td>
+							  </tr>
+							  </tbody>
+						  </table>
+					  </div>
+					  <div class="tab-pane fade" id="certificate">
+						  <br>
+						  <table class="table table-bordered table-striped" >
+							  <tr ng-repeat="item in entity.goodsDesc.customAttributeItems">
+								  <td>{{item.text}}</td>
+								  <td>{{item.value}}</td>
+							  </tr>
+						  </table>
+
+					  </div>
+					  <div class="tab-pane fade" id="ceo">
+						  <br>
+						  <table class="table table-bordered table-striped" >
+							  <tr ng-repeat="pojo in entity.itemList">
+								  <td>{{pojo.spec}}</td>
+							  </tr>
+						  </table>
+					  </div>
+
+				  </div>
+				  <!-- 选项卡结束 -->
+
+
+			  </div>
+			  <div class="modal-footer">
+				  <!--<button type="button" class="btn btn-default" title="删除" ng-click="dele()"><i class="fa fa-trash-o"></i> 删除</button>-->
+				  <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+			  </div>
+		  </div>
+	  </div>
+  </div>
         
 </body>
 

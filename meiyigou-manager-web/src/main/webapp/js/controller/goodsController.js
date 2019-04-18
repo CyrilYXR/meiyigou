@@ -26,7 +26,21 @@ app.controller('goodsController' ,function($scope,$controller   ,goodsService,it
 	$scope.findOne=function(id){				
 		goodsService.findOne(id).success(
 			function(response){
-				$scope.entity= response;					
+				$scope.entity= response;
+                //商品图片
+                $scope.entity.goodsDesc.itemImages=JSON.parse($scope.entity.goodsDesc.itemImages);
+
+                //显示扩展属性
+                $scope.entity.goodsDesc.customAttributeItems = JSON.parse($scope.entity.goodsDesc.customAttributeItems);
+
+                //规格
+                $scope.entity.goodsDesc.specificationItems=JSON.parse($scope.entity.goodsDesc.specificationItems);
+
+                //SKU列表规格列转换
+                for( var i=0;i<$scope.entity.itemList.length;i++ ){
+                    $scope.entity.itemList[i].spec =
+                        JSON.parse( $scope.entity.itemList[i].spec);
+                }
 			}
 		);				
 	}

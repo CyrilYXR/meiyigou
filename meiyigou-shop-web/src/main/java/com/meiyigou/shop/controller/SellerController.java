@@ -5,6 +5,7 @@ import com.meiyigou.pojo.TbSeller;
 import com.meiyigou.sellergoods.service.SellerService;
 import entity.PageResult;
 import entity.Result;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -72,7 +73,9 @@ public class SellerController {
 	 */
 	@RequestMapping("/update")
 	public Result update(@RequestBody TbSeller seller){
+		String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
 		try {
+			seller.setSellerId(sellerId);
 			sellerService.update(seller);
 			return new Result(true, "修改成功");
 		} catch (Exception e) {
@@ -83,12 +86,13 @@ public class SellerController {
 	
 	/**
 	 * 获取实体
-	 * @param id
+	 * 查询登录商家的信息，商家id从SpringSecurity中获取
 	 * @return
 	 */
 	@RequestMapping("/findOne")
-	public TbSeller findOne(String id){
-		return sellerService.findOne(id);		
+	public TbSeller findOne(){
+		String sellerId = SecurityContextHolder.getContext().getAuthentication().getName();
+		return sellerService.findOne(sellerId);
 	}
 	
 	/**

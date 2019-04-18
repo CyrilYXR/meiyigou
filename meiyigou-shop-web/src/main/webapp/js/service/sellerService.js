@@ -10,8 +10,8 @@ app.service('sellerService',function($http){
 		return $http.get('../seller/findPage.do?page='+page+'&rows='+rows);
 	}
 	//查询实体
-	this.findOne=function(id){
-		return $http.get('../seller/findOne.do?id='+id);
+	this.findOne=function(){
+		return $http.get('../seller/findOne.do');
 	}
 	//增加 
 	this.add=function(entity){

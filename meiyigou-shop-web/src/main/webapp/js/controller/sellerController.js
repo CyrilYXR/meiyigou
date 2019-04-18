@@ -1,8 +1,8 @@
  //控制层 
-app.controller('sellerController' ,function($scope,$controller   ,sellerService){	
+app.controller('sellerController' ,function($scope,$controller,sellerService){
 	
 	$controller('baseController',{$scope:$scope});//继承
-	
+
     //读取列表数据绑定到表单中  
 	$scope.findAll=function(){
 		sellerService.findAll().success(
@@ -23,8 +23,8 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 	}
 	
 	//查询实体 
-	$scope.findOne=function(id){				
-		sellerService.findOne(id).success(
+	$scope.findOne=function(){
+		sellerService.findOne().success(
 			function(response){
 				$scope.entity= response;					
 			}
@@ -50,7 +50,15 @@ app.controller('sellerController' ,function($scope,$controller   ,sellerService)
 			}		
 		);				
 	}
-	
+
+	//修改商家信息
+	$scope.update=function(){
+		sellerService.update($scope.entity).success(
+			function (response) {
+				alert(response.message);
+            }
+		)
+	}
 	 
 	//批量删除 
 	$scope.dele=function(){			

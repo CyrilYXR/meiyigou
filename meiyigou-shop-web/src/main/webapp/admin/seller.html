@@ -15,13 +15,18 @@
     <link rel="stylesheet" href="../css/style.css">
 	<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
-   
+
+    <script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/controller/baseController.js"></script>
+    <script type="text/javascript" src="../js/controller/sellerController.js"></script>
+    <script type="text/javascript" src="../js/service/sellerService.js"></script>
     
 </head>
 
-<body class="hold-transition skin-red sidebar-mini" >
-
-
+<body class="hold-transition skin-red sidebar-mini" ng-app="meiyigou"
+      ng-controller="sellerController" ng-init="findOne()">
 
             <!-- 正文区域 -->
             <section class="content">
@@ -49,82 +54,87 @@
 
                                     <div class="col-md-2 title">公司名称</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="公司名称" value="">
+                                        <input type="text" class="form-control" ng-model="entity.name" placeholder="公司名称" value="">
+                                    </div>
+
+                                    <div class="col-md-2 title">店铺名称</div>
+                                    <div class="col-md-10 data">
+                                        <input type="text" class="form-control" ng-model="entity.nickName" placeholder="店铺名称" value="">
                                     </div>
 									
-									<div class="col-md-2 title">公司手机</div>
+									<!--<div class="col-md-2 title">公司手机</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"  placeholder="公司手机" value="">
-                                    </div>
+                                        <input type="text" class="form-control"  ng-model="entity.telephone" placeholder="公司手机" value="">
+                                    </div>-->
                                     
                                     <div class="col-md-2 title">公司电话</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"    placeholder="公司电话" value="">
+                                        <input type="text" class="form-control"  ng-model="entity.mobile" placeholder="公司电话" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">公司详细地址</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"    placeholder="公司详细地址" value="">
+                                        <input type="text" class="form-control" ng-model="entity.addressDetail" placeholder="公司详细地址" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">联系人姓名</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="联系人姓名" value="">
+                                        <input type="text" class="form-control" ng-model="entity.linkmanName" placeholder="联系人姓名" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">联系人QQ</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="联系人QQ" value="">
+                                        <input type="text" class="form-control"  ng-model="entity.linkmanQq" placeholder="联系人QQ" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">联系人手机</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"    placeholder="联系人手机" value="">
+                                        <input type="text" class="form-control" ng-model="entity.linkmanMobile" placeholder="联系人手机" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">联系人EMAIL</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="联系人EMAIL" value="">
+                                        <input type="text" class="form-control" ng-model="entity.linkmanEmail" placeholder="联系人EMAIL" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">营业执照号</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="营业执照号" value="">
+                                        <input type="text" class="form-control" ng-model="entity.licenseNumber" placeholder="营业执照号" value="">
                                     </div>
                                      
                                     <div class="col-md-2 title">税务登记证号</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="税务登记证号" value="">
+                                        <input type="text" class="form-control" ng-model="entity.taxNumber" placeholder="税务登记证号" value="">
                                     </div>
                                     
  									<div class="col-md-2 title">组织机构代码证</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"  placeholder="组织机构代码证" value="">
+                                        <input type="text" class="form-control" ng-model="entity.orgNumber" placeholder="组织机构代码证" value="">
                                     </div>
                                     
                                     <div class="col-md-2 title">法定代表人</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="法定代表人" value="">
+                                        <input type="text" class="form-control" ng-model="entity.legalPerson" placeholder="法定代表人" value="">
                                     </div>
                                     
  									<div class="col-md-2 title">法定代表人身份证号</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="法定代表人身份证号" value="">
+                                        <input type="text" class="form-control" ng-model="entity.legalPersonCardId" placeholder="法定代表人身份证号" value="">
                                     </div>
 
- 									<div class="col-md-2 title">开户行名称</div>
+ 									<div class="col-md-2 title">开户行</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control" placeholder="开户行名称" value="">
+                                        <input type="text" class="form-control" ng-model="entity.bankName" placeholder="开户行" value="">
                                     </div>
                                     
-                                    <div class="col-md-2 title">开户行支行</div>
+                                    <!--<div class="col-md-2 title">开户行支行</div>
                                     <div class="col-md-10 data">
                                         <input type="text" class="form-control"   placeholder="开户行支行" value="">
-                                    </div>
+                                    </div>-->
 
-                                    <div class="col-md-2 title">银行账号</div>
+                                    <div class="col-md-2 title">开户行账号名称</div>
                                     <div class="col-md-10 data">
-                                        <input type="text" class="form-control"   placeholder="银行账号" value="">
+                                        <input type="text" class="form-control"  ng-model="entity.bankUser"  placeholder="银行账号" value="">
                                     </div>
                                     
                                 </div>
@@ -136,7 +146,7 @@
                         </div>
                         <!--tab内容/-->
 						<!--表单内容/-->
-							 
+
                     </div>
                  	
                  	
@@ -144,8 +154,8 @@
                  	
                    </div>
                   <div class="btn-toolbar list-toolbar">
-				      <button class="btn btn-primary" ><i class="fa fa-save"></i>保存</button>
-				      <a  data-toggle="modal" class="btn btn-danger">提交</a>
+				      <button class="btn btn-primary" ng-click="update()"><i class="fa fa-save"></i>保存</button>
+				      <!--<a  data-toggle="modal" class="btn btn-danger">提交</a>-->
 				  </div>
 			
             </section>

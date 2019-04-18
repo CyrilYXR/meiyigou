@@ -184,7 +184,7 @@
 			</div>
 			<!--product-detail-->
 			<div class="clearfix product-detail">
-				<div class="fl aside">
+				<#--<div class="fl aside">
 					<ul class="sui-nav nav-tabs tab-wraped">
 						<li class="active">
 							<a href="#index" data-toggle="tab">
@@ -310,8 +310,8 @@
 							<p>推荐品牌</p>
 						</div>
 					</div>
-				</div>
-				<div class="fr detail">
+				</div>-->
+				<#--<div class="fr detail">
 					<div class="clearfix fitting">
 						<h4 class="kt">选择搭配</h4>
 						<div class="good-suits">
@@ -365,7 +365,7 @@
 								<button class="sui-btn  btn-danger addshopcar">加入购物车</button>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="tab-main intro">
 						<ul class="sui-nav nav-tabs tab-wraped">
 							<li class="active">
@@ -383,7 +383,7 @@
 									<span>售后保障</span>
 								</a>
 							</li>
-							<li>
+							<#--<li>
 								<a href="#four" data-toggle="tab">
 									<span>商品评价</span>
 								</a>
@@ -392,7 +392,7 @@
 								<a href="#five" data-toggle="tab">
 									<span>手机社区</span>
 								</a>
-							</li>
+							</li>-->
 						</ul>
 						<div class="clearfix"></div>
 						<div class="tab-content tab-wraped">
@@ -426,7 +426,7 @@
 				</div>
 			</div>
 			<!--like-->
-			<div class="clearfix"></div>
+			<#--<div class="clearfix"></div>
 			<div class="like">
 				<h4 class="kt">猜你喜欢</h4>
 				<div class="like-list">
@@ -547,7 +547,7 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 	<!-- 底部栏位 -->
