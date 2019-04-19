@@ -70,6 +70,13 @@ public interface GoodsService {
 	public void updateStatus(Long ids[], String status);
 
 	/**
+	 * 商品上下架
+	 * @param ids
+	 * @param status
+	 */
+	void updateMarketable(Long[] ids, String status);
+
+	/**
 	 * 根据SPU的id集合查询SKU列表
 	 * @param goodsIds
 	 * @param status

@@ -189,24 +189,24 @@ $(function(){
 					<dl>
 						<dt><i>·</i> 订单中心</dt>
 						<dd ><a href="home-index.html"  class="list-active" >我的订单</a></dd>
-						<dd><a href="home-order-pay.html" >待付款</a></dd>
+						<!--<dd><a href="home-order-pay.html" >待付款</a></dd>
 						<dd><a href="home-order-send.html"  >待发货</a></dd>
 						<dd><a href="home-order-receive.html" >待收货</a></dd>
-						<dd><a href="home-order-evaluate.html" >待评价</a></dd>
+						<dd><a href="home-order-evaluate.html" >待评价</a></dd>-->
 					</dl>
 					<dl>
-						<dt><i>·</i> 我的中心</dt>
+						<!--<dt><i>·</i> 我的中心</dt>
 						<dd><a href="home-person-collect.html">我的收藏</a></dd>
-						<dd><a href="home-person-footmark.html">我的足迹</a></dd>
+						<dd><a href="home-person-footmark.html">我的足迹</a></dd>-->
 					</dl>
 					<dl>
-						<dt><i>·</i> 物流消息</dt>
+						<br><!--<dt><i>·</i> 物流消息</dt>-->
 					</dl>
 					<dl>
 						<dt><i>·</i> 设置</dt>
 						<dd><a href="home-setting-info.html">个人信息</a></dd>
 						<dd><a href="home-setting-address.html"  >地址管理</a></dd>
-						<dd><a href="home-setting-safe.html" >安全管理</a></dd>
+						<!--<dd><a href="home-setting-safe.html" >安全管理</a></dd>-->
 					</dl>
 				</div>
 			</div>
@@ -220,7 +220,7 @@ $(function(){
 								<th width="35%">宝贝</th>
 								<th width="5%">单价</th>
 								<th width="5%">数量</th>
-								<th width="8%">商品操作</th>
+								<th width="8%">交易类型</th>
 								<th width="10%">实付款</th>
 								<th width="10%">交易状态</th>
 								<th width="10%">交易操作</th>
@@ -234,7 +234,7 @@ $(function(){
 							<!--order1-->
 							<div class="choose-title">
 								<label data-toggle="checkbox" class="checkbox-pretty ">
-									<input type="checkbox" checked="checked"><span>{{entity.order.createTime}}　订单编号：{{entity.order.id}}  店铺：{{entity.order.sellerId}} </span>
+									<input type="checkbox" checked="checked"><span>{{entity.order.createTime}}　订单编号：{{entity.order.orderId}}  店铺：{{entity.order.sellerId}} </span>
 								</label>
 
 							</div>
@@ -243,8 +243,8 @@ $(function(){
 								<tr ng-repeat="item in entity.orderItemList">
 									<td width="35%">
 										<class="typographic"><img src="{{item.picPath}}" height="70" width="70" />
-											<a href="#" class="block-text">{{item.title}}</a>
-											<span class="guige">规格：{{item.itemId}}</span>
+											<a href="home-orderDetail.html#?orderId={{entity.order.orderId}}" class="block-text">{{item.title}}</a>
+											<!--<span class="guige">规格：{{item.itemId}}</span>-->
 										</div>
 									</td>
 									<td width="5%" class="center">
@@ -255,24 +255,24 @@ $(function(){
 									</td>
 									<td width="5%" class="center">{{item.num}}</td>
 									<td width="8%" class="center">
-
+										{{paymentType[entity.order.paymentType]}}
 									</td>
 									<td width="10%" class="center" >
 										<ul class="unstyled">
-											<li>¥299.00</li>
-											<li>（含运费：￥0.00）</li>
+											<li>¥{{entity.order.payment}}</li>
+											<!--<li>（含运费：￥0.00）</li>-->
 										</ul>
 									</td>
 									<td width="10%" class="center">
 										<ul class="unstyled">
-											<li>等待卖家付款</li>
-											<li><a href="orderDetail.html" class="btn">订单详情 </a></li>
+											<li>{{status[entity.order.status]}}</li>
+											<li><a href="home-orderDetail.html#?orderId={{entity.order.orderId}}" class="btn">订单详情 </a></li>
 										</ul>
 									</td>
 									<td width="10%" class="center">
 										<ul class="unstyled">
-											<li><a href="#" class="sui-btn btn-info">立即付款</a></li>
-											<li>取消订单</li>
+											<li ng-if="entity.order.status!=1"><a href="home-orderDetail.html#?orderId={{entity.order.orderId}}" class="sui-btn btn-info">订单详情</a></li>
+											<li ng-if="entity.order.status==1"><a class="sui-btn btn-danger" onclick='confirm("你确认要取消该订单吗？")' ng-click="deleOrderById(entity.order.orderId)">取消订单</a></li>
 
 										</ul>
 									</td>

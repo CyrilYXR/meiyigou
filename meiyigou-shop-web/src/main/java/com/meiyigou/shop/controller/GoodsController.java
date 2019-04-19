@@ -129,5 +129,15 @@ public class GoodsController {
 		goods.setSellerId(sellerId);
 		return goodsService.findPage(goods, page, rows);		
 	}
-	
+
+	@RequestMapping("/updateMarketable")
+	public Result updateMarketable(Long ids[], String status){
+		try{
+			goodsService.updateMarketable(ids, status);
+			return new Result(true, "更新成功");
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new Result(false, "更新失败");
+		}
+	}
 }

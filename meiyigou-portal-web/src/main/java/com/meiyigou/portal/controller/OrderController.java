@@ -1,6 +1,10 @@
 package com.meiyigou.portal.controller;
+import java.math.BigInteger;
 import java.util.List;
 
+import com.alibaba.fastjson.serializer.SerializeConfig;
+import com.alibaba.fastjson.serializer.ToStringSerializer;
+import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.meiyigou.pojogroup.Order;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -139,6 +143,15 @@ public class OrderController {
 	public PageResult findOrderPage(TbOrder tbOrder, int pageNum, int pageSize){
         String userName = SecurityContextHolder.getContext().getAuthentication().getName();
         tbOrder.setUserId(userName);
+
+		//解决Long转json精度丢失的问题
+		FastJsonConfig fastJsonConfig = new FastJsonConfig();
+		SerializeConfig serializeConfig = SerializeConfig.globalInstance;
+		serializeConfig.put(BigInteger.class, ToStringSerializer.instance);
+		serializeConfig.put(Long.class, ToStringSerializer.instance);
+		serializeConfig.put(Long.TYPE, ToStringSerializer.instance);
+		fastJsonConfig.setSerializeConfig(serializeConfig);
+
         return orderService.findOrderPage(tbOrder, pageNum, pageSize);
 	}
 }

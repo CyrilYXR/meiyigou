@@ -247,6 +247,15 @@ public class GoodsServiceImpl implements GoodsService {
 		}
 	}
 
+	@Override
+	public void updateMarketable(Long[] ids, String status) {
+		for(Long id : ids){
+			TbGoods tbGoods = goodsMapper.selectByPrimaryKey(id);
+			tbGoods.setIsMarketable(status);
+			goodsMapper.updateByPrimaryKey(tbGoods);
+		}
+	}
+
 	/**
 	 * 根据SPU的id集合查询SKU列表
 	 * @param goodsIds

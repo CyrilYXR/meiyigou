@@ -216,7 +216,7 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
             $scope.entity.goodsDesc.specificationItems.push({"attributeName":name,"attributeValue":[value]});
         }
 
-    }
+    };
 
     //创建SKU列表
     $scope.createItemList=function(){
@@ -225,7 +225,7 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
         for(var i=0;i< items.length;i++){
             $scope.entity.itemList = addColumn( $scope.entity.itemList,items[i].attributeName,items[i].attributeValue );
         }
-    }
+    };
     //添加列值
     addColumn=function(list,columnName,conlumnValues){
         var newList=[];//新的集合
@@ -238,9 +238,9 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
             }
         }
         return newList;
-    }
+    };
 
-    $scope.status=['未审核','已审核','审核未通过','关闭']  //商品状态
+    $scope.status=['未审核','审核通过','已驳回','关闭']; //商品状态
 
     $scope.itemCatList=[];  //商品分类名称
 
@@ -253,7 +253,7 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
                 }
             }
         )
-    }
+    };
 
     //根据规格名称和选项名称返回是否被勾选
     $scope.checkAttributeValue=function(specName,optionName){
@@ -268,7 +268,22 @@ app.controller('goodsController' ,function($scope,$controller,$location,goodsSer
                 return false;
             }
         }
-    }
+    };
 
+    $scope.isMarketable=['已下架','已上架'];
+
+    //更改状态
+    $scope.updateMarketable=function(status){
+        goodsService.updateMarketable($scope.selectIds,status).success(
+            function(response){
+                if(response.success){//成功
+                    $scope.reloadList();//刷新列表
+                    $scope.selectIds=[];//清空ID集合
+                }else{
+                    alert(response.message);
+                }
+            }
+        );
+    }
 
 });	
